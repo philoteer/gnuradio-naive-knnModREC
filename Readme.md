@@ -2,4 +2,4 @@
 
 License: GPLv3 (Follows GNU Radio's licensing terms)
 
-A naive kNN based automatic modulation classifier (feat: BW, PSD_est(max), PSD_est(max) - PSD_est(min).
+A naive kNN based automatic modulation classifier (features: BW, PSD_est(max), PSD_est(max) - PSD_est(min).
