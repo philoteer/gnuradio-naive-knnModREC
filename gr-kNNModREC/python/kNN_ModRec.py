@@ -79,7 +79,7 @@ class kNN_ModRec(gr.sync_block):
 		in0 = input_items[0]
 		in1 = input_items[1]
 		
-		if len(in0) >= 1:
+		if len(in0) >= 1 and len(self.bw_list) > self.sig_no:
 			x = [self.bw_list[self.sig_no]]
 			x.extend(in0[0])
 			x.extend(in1[0])
