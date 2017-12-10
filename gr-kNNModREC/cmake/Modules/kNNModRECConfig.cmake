@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_KNNMODREC kNNModREC)
+
+FIND_PATH(
+    KNNMODREC_INCLUDE_DIRS
+    NAMES kNNModREC/api.h
+    HINTS $ENV{KNNMODREC_DIR}/include
+        ${PC_KNNMODREC_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    KNNMODREC_LIBRARIES
+    NAMES gnuradio-kNNModREC
+    HINTS $ENV{KNNMODREC_DIR}/lib
+        ${PC_KNNMODREC_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(KNNMODREC DEFAULT_MSG KNNMODREC_LIBRARIES KNNMODREC_INCLUDE_DIRS)
+MARK_AS_ADVANCED(KNNMODREC_LIBRARIES KNNMODREC_INCLUDE_DIRS)
+

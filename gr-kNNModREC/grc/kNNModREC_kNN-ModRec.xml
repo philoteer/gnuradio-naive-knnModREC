@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<block>
+  <name>kNN-ModRec</name>
+  <key>kNNModREC_kNN-ModRec</key>
+  <category>[kNNModREC]</category>
+  <import>import kNNModREC</import>
+  <make>kNNModREC.kNN_ModRec($vec_len1, $vec_len2, $file_path, $sig_no, $metric, $n)</make>
+  <callback>callback($metric, $n)</callback>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>vec_len1</name>
+    <key>vec_len1</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>vec_len2</name>
+    <key>vec_len2</key>
+    <type>int</type>
+  </param>
+  
+   <param>
+    <name>file_path</name>
+    <key>file_path</key>
+    <type>string</type>
+  </param>
+  
+    <param>
+    <name>sig_no</name>
+    <key>sig_no</key>
+    <type>int</type>
+  </param>
+  
+    <param>
+    <name>metric</name>
+    <key>metric</key>
+    <type>string</type>
+  </param>
+
+    <param>
+    <name>n</name>
+    <key>n</key>
+    <type>int</type>
+  </param>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+ <sink>
+    <name>in_1</name>
+    <type>float</type>
+    <vlen>$vec_len1</vlen>
+  </sink>
+  <sink>
+    <name>in_2</name>
+    <type>float</type>
+    <vlen>$vec_len2</vlen>
+  </sink>
+  <sink>
+    <name>map</name>
+    <type>message</type>
+  </sink>
+
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <!-- <source>
+    <name>out</name>
+    <type></type>
+  </source> -->
+  
+    <source>
+    <name>classification</name>
+    <type>message</type>
+	</source>
+</block>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<block>
+  <name>vector_avg</name>
+  <key>kNNModREC_vector_avg</key>
+  <category>[kNNModREC]</category>
+  <import>import kNNModREC</import>
+  <make>kNNModREC.vector_avg($vec_len,$avg_len)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+       
+  <param>
+    <name>vec_len</name>
+    <key>vec_len</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>avg_len</name>
+    <key>avg_len</key>
+    <type>int</type>
+  </param>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <vlen>$vec_len</vlen>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>in</name>
+    <type>float</type>
+    <vlen>$vec_len</vlen>
+  </source>
+</block>
