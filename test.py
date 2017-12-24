@@ -4,18 +4,20 @@ from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 import numpy as np
 
-#n value
-#n = 3
+#number of times to test
 iterations = 100
 
+#load the data file.
 df = pd.read_csv("feature.csv", header = 0)
+
 #shuffle
 df = df.sample(frac=1).reset_index(drop=True)
 
 #uncomment to remove the frequency feature.
 #df = df.drop(['frequency'],1)
 
-for n in range (1, 8):
+#Test for different K values
+for k in range (1, 8):
 	rate = 0
 	for i in range (0, iterations):
 		#training set
@@ -28,7 +30,7 @@ for n in range (1, 8):
 		y = train['class']
 		x = train.drop(['class'],1)
 
-		knn = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric="euclidean", metric_params=None, n_jobs=1, n_neighbors=n, p=2, weights='uniform')
+		knn = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric="euclidean", metric_params=None, n_jobs=1, n_neighbors=k, p=2, weights='uniform')
 
 		knn.fit(x,y)
 
@@ -36,5 +38,5 @@ for n in range (1, 8):
 
 		a = knn.predict(test_no_class)
 		rate += sum(a == test['class'])/float(len(test) * iterations)
-	print n
+	print k
 	print rate
