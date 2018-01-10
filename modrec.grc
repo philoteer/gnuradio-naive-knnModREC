@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.9'?>
+<?grc format='1' created='3.7.11'?>
 <flow_graph>
   <timestamp>Mon Dec  4 08:24:25 2017</timestamp>
   <block>
@@ -248,7 +248,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 221)</value>
+      <value>(8, 132)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -275,7 +275,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 1220)</value>
+      <value>(8, 1148)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -721,12 +721,12 @@
       <value>noise_lvl</value>
     </param>
     <param>
-      <key>poll_rate</key>
-      <value>10</value>
-    </param>
-    <param>
       <key>value</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>poll_rate</key>
+      <value>10</value>
     </param>
   </block>
   <block>
@@ -772,7 +772,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(672, 144)</value>
+      <value>(640, 144)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -881,12 +881,12 @@
       <value>sig0_p</value>
     </param>
     <param>
-      <key>poll_rate</key>
-      <value>2</value>
-    </param>
-    <param>
       <key>value</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>poll_rate</key>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -901,7 +901,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(160, 1452)</value>
+      <value>(152, 1460)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -928,7 +928,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(112, 1220)</value>
+      <value>(112, 1148)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1033,7 +1033,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(568, 332)</value>
+      <value>(568, 380)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1123,7 +1123,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(560, 1484)</value>
+      <value>(560, 1508)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1174,7 +1174,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(920, 1272)</value>
+      <value>(920, 1200)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1268,7 +1268,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Estimate the noise power</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1280,7 +1280,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(576, 652)</value>
+      <value>(592, 652)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1500,7 +1500,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(720, 1484)</value>
+      <value>(720, 1508)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1535,7 +1535,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Normalize (by dividing by the power estimates)</value>
     </param>
     <param>
       <key>const</key>
@@ -1586,7 +1586,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>to dB</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1598,7 +1598,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 638)</value>
+      <value>(424, 636)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1637,7 +1637,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>to dB</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1649,7 +1649,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(568, 1388)</value>
+      <value>(712, 1388)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1704,7 +1704,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(960, 1196)</value>
+      <value>(960, 1124)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1751,7 +1751,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(952, 1364)</value>
+      <value>(952, 1292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1782,7 +1782,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Remove edges (which shows filtering artefacts)</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1794,7 +1794,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(728, 1240)</value>
+      <value>(728, 1168)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1845,7 +1845,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(168, 332)</value>
+      <value>(168, 380)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1896,7 +1896,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(160, 1284)</value>
+      <value>(160, 1212)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1947,7 +1947,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1064, 1276)</value>
+      <value>(1064, 1204)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2202,7 +2202,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(560, 1276)</value>
+      <value>(560, 1204)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2253,7 +2253,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(384, 1484)</value>
+      <value>(384, 1508)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2363,7 +2363,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 304)</value>
+      <value>(336, 352)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2426,7 +2426,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(328, 1256)</value>
+      <value>(328, 1184)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2606,7 +2606,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Signal detector (gr-inspector)</value>
     </param>
     <param>
       <key>affinity</key>
@@ -2807,7 +2807,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(400, 1889)</value>
+      <value>(408, 1872)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2858,7 +2858,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Average the input PSD estimates</value>
     </param>
     <param>
       <key>affinity</key>
@@ -2952,7 +2952,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>noise power</value>
     </param>
     <param>
       <key>affinity</key>
@@ -2987,7 +2987,10 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>depends on: 
+-https://github.com/gnuradio/gr-inspector
+-gr-knnModREC (included)
+-scikit</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -2995,7 +2998,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1112, 108)</value>
+      <value>(936, 12)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3007,7 +3010,7 @@
     </param>
     <param>
       <key>note</key>
-      <value>depends on: https://github.com/gnuradio/gr-inspector</value>
+      <value>Dependencies</value>
     </param>
   </block>
   <block>
@@ -3018,7 +3021,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Modulation Recognition, using kNN.</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -3026,7 +3029,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1168, 156)</value>
+      <value>(8, 196)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3034,11 +3037,73 @@
     </param>
     <param>
       <key>id</key>
-      <value>note_0_0_0</value>
+      <value>note_1</value>
     </param>
     <param>
       <key>note</key>
-      <value>depends on: </value>
+      <value></value>
+    </param>
+  </block>
+  <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value>psd estimates (before averaging)</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(0, 300)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_2</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value></value>
+    </param>
+  </block>
+  <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value>The modrec routine!</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(248, 1800)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_3</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value></value>
     </param>
   </block>
   <block>
@@ -4456,7 +4521,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>power estimate</value>
     </param>
     <param>
       <key>affinity</key>
@@ -4468,7 +4533,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(888, 1488)</value>
+      <value>(888, 1512)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -4518,6 +4583,14 @@
       <value>gain</value>
     </param>
     <param>
+      <key>lo_export0</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source0</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant10</key>
       <value></value>
     </param>
@@ -4544,6 +4617,14 @@
     <param>
       <key>gain10</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export10</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source10</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant11</key>
@@ -4574,6 +4655,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export11</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source11</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant12</key>
       <value></value>
     </param>
@@ -4600,6 +4689,14 @@
     <param>
       <key>gain12</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export12</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source12</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant13</key>
@@ -4630,6 +4727,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export13</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source13</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant14</key>
       <value></value>
     </param>
@@ -4656,6 +4761,14 @@
     <param>
       <key>gain14</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export14</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source14</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant15</key>
@@ -4686,6 +4799,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export15</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source15</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant16</key>
       <value></value>
     </param>
@@ -4712,6 +4833,14 @@
     <param>
       <key>gain16</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export16</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source16</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant17</key>
@@ -4742,6 +4871,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export17</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source17</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant18</key>
       <value></value>
     </param>
@@ -4768,6 +4905,14 @@
     <param>
       <key>gain18</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export18</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source18</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant19</key>
@@ -4798,6 +4943,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export19</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source19</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant1</key>
       <value></value>
     </param>
@@ -4824,6 +4977,14 @@
     <param>
       <key>gain1</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export1</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source1</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant20</key>
@@ -4854,6 +5015,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export20</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source20</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant21</key>
       <value></value>
     </param>
@@ -4880,6 +5049,14 @@
     <param>
       <key>gain21</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export21</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source21</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant22</key>
@@ -4910,6 +5087,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export22</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source22</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant23</key>
       <value></value>
     </param>
@@ -4936,6 +5121,14 @@
     <param>
       <key>gain23</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export23</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source23</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant24</key>
@@ -4966,6 +5159,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export24</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source24</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant25</key>
       <value></value>
     </param>
@@ -4992,6 +5193,14 @@
     <param>
       <key>gain25</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export25</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source25</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant26</key>
@@ -5022,6 +5231,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export26</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source26</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant27</key>
       <value></value>
     </param>
@@ -5048,6 +5265,14 @@
     <param>
       <key>gain27</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export27</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source27</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant28</key>
@@ -5078,6 +5303,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export28</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source28</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant29</key>
       <value></value>
     </param>
@@ -5104,6 +5337,14 @@
     <param>
       <key>gain29</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export29</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source29</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant2</key>
@@ -5134,6 +5375,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export2</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source2</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant30</key>
       <value></value>
     </param>
@@ -5160,6 +5409,14 @@
     <param>
       <key>gain30</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export30</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source30</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant31</key>
@@ -5190,6 +5447,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export31</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source31</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant3</key>
       <value></value>
     </param>
@@ -5216,6 +5481,14 @@
     <param>
       <key>gain3</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export3</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source3</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant4</key>
@@ -5246,6 +5519,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export4</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source4</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant5</key>
       <value></value>
     </param>
@@ -5272,6 +5553,14 @@
     <param>
       <key>gain5</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export5</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source5</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant6</key>
@@ -5302,6 +5591,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export6</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source6</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant7</key>
       <value></value>
     </param>
@@ -5328,6 +5625,14 @@
     <param>
       <key>gain7</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export7</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source7</key>
+      <value>internal</value>
     </param>
     <param>
       <key>ant8</key>
@@ -5358,6 +5663,14 @@
       <value>0</value>
     </param>
     <param>
+      <key>lo_export8</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source8</key>
+      <value>internal</value>
+    </param>
+    <param>
       <key>ant9</key>
       <value></value>
     </param>
@@ -5384,6 +5697,14 @@
     <param>
       <key>gain9</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>lo_export9</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>lo_source9</key>
+      <value>internal</value>
     </param>
     <param>
       <key>clock_rate</key>
@@ -5546,6 +5867,10 @@
       <value>False</value>
     </param>
     <param>
+      <key>hide_lo_controls</key>
+      <value>True</value>
+    </param>
+    <param>
       <key>stream_args</key>
       <value></value>
     </param>
@@ -5566,7 +5891,7 @@
     <key>virtual_sink</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>I-Q data source</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -5601,7 +5926,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(944, 332)</value>
+      <value>(944, 380)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -5620,7 +5945,7 @@
     <key>virtual_sink</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>extracted signal (I-Q data)</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -5655,7 +5980,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1120, 1364)</value>
+      <value>(1120, 1292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -5682,7 +6007,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(720, 1404)</value>
+      <value>(864, 1404)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -5728,7 +6053,7 @@
     <key>virtual_sink</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Shortened PSD vector (max held)</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -5755,7 +6080,7 @@
     <key>virtual_sink</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Shortened PSD vector (min held)</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -5790,7 +6115,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(0, 332)</value>
+      <value>(0, 380)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -5809,7 +6134,7 @@
     <key>virtual_source</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>I-Q data in</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -5890,7 +6215,7 @@
     <key>virtual_source</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>extracted signal</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -5898,7 +6223,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 1284)</value>
+      <value>(8, 1212)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -5944,7 +6269,7 @@
     <key>virtual_source</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>extracted signal (in PSD, power normalized)</value>
     </param>
     <param>
       <key>_enabled</key>

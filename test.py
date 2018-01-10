@@ -27,16 +27,22 @@ for k in range (1, 8):
 		#test set
 		test = df[~mask]
 
+		#separate x(features) and y (expected result)
 		y = train['class']
 		x = train.drop(['class'],1)
 
+		#train
 		knn = KNeighborsClassifier(algorithm='auto', leaf_size=30, metric="euclidean", metric_params=None, n_jobs=1, n_neighbors=k, p=2, weights='uniform')
 
 		knn.fit(x,y)
 
+		#remove y from the test data
 		test_no_class = test.drop(['class'],1)
 
+		#predict
 		a = knn.predict(test_no_class)
+		
+		#measure the accuracy
 		rate += sum(a == test['class'])/float(len(test) * iterations)
 	print k
 	print rate
